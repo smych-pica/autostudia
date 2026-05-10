@@ -16,26 +16,56 @@
 <body>
 
 <!-- НАВБАР -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-black">
-  <div class="container">
-    <a class="navbar-brand fw-bold">AUTO STUDIO</a>
+<nav class="navbar navbar-dark bg-black fixed-top">
+  <div class="container-fluid">
 
-    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav">
+    <a class="navbar-brand" href="/">AutoStudio</a>
+
+    <!-- кнопка меню -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#menu">
       <span class="navbar-toggler-icon"></span>
     </button>
 
-    <div class="collapse navbar-collapse" id="nav">
-      <ul class="navbar-nav ms-auto">
-        <li class="nav-item"><a href="/" class="nav-link">Главная</a></li>
-        <li class="nav-item"><a href="/portfolio" class="nav-link">Портфолио</a></li>
-        <li class="nav-item"><a href="/calculator" class="nav-link">Калькулятор</a></li>
-        <li class="nav-item"><a href="/booking" class="nav-link btn btn-gold ms-2">Записаться</a></li>
-      </ul>
+    <!-- меню -->
+    <div class="offcanvas offcanvas-end bg-dark text-white" tabindex="-1" id="menu">
+
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title">Меню</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
+      </div>
+
+      <div class="offcanvas-body">
+
+        <ul class="navbar-nav">
+
+          <li class="nav-item">
+            <a class="nav-link text-white" href="/">Главная</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link text-white" href="/portfolio">Портфолио</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link text-white" href="/calculator">Калькулятор</a>
+          </li>
+
+          <li class="nav-item mt-3">
+            <a class="btn btn-warning w-100" href="/booking">
+              Записаться
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
     </div>
+
   </div>
 </nav>
 
 {% block content %}{% endblock %}
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>
