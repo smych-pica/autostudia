@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<!-- HERO -->
+<section class="hero text-white text-center">
+    <div class="container px-3">
+    <h1 class="display-5 fw-bold">Премиальный детейлинг</h1>
+    <p class="lead">Защита и идеальный внешний вид вашего авто</p>
+    <a href="/booking" class="btn btn-gold mt-3">Записаться</a>
+</div>
+</section>
+
+<!-- УСЛУГИ -->
+<section class="container py-5">
+    <h2 class="text-center mb-5">Наши услуги</h2>
+
+    <div class="row text-center">
+        <div class="col-md-4">
+            <div class="card custom-card">
+                <h4>Полировка</h4>
+                <p>Удаление царапин и восстановление блеска</p>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card custom-card">
+                <h4>Керамика</h4>
+                <p>Защита кузова до 3 лет</p>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card custom-card">
+                <h4>Химчистка</h4>
+                <p>Полное восстановление салона</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock %}

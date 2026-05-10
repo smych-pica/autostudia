@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="container py-5">
+    <h2 class="text-center mb-4">Онлайн-запись</h2>
+
+    <form method="post" class="card p-4 custom-card">
+        <input name="name" class="form-control mb-3" placeholder="Имя">
+        <input name="phone" class="form-control mb-3" placeholder="Телефон">
+
+        <select name="service" class="form-control mb-3">
+            <option>Полировка</option>
+            <option>Керамика</option>
+            <option>Химчистка</option>
+        </select>
+
+        <input type="date" name="date" class="form-control mb-3">
+
+        <button class="btn btn-gold">Записаться</button>
+    </form>
+</div>
+
+{% endblock %}
