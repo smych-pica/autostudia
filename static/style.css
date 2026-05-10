@@ -12,10 +12,12 @@ body {
 /* HERO */
 .hero {
     height: 90vh;
-    background-image: url("https://i.pinimg.com/originals/45/de/59/45de59c6aeba49b82c13d2fb428ea9b2.jpg");
-    background-size: cover;
-    background-position: center;
+    background: url('https://i.pinimg.com/originals/45/de/59/45de59c6aeba49b82c13d2fb428ea9b2.jpg') center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     position: relative;
+    text-align: center;
 }
 .hero::before {
     content: "";
